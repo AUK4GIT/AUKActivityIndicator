@@ -39,7 +39,7 @@ class CIndicatorView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.ringsArray = [CALayer(),CALayer(),CALayer(),CALayer(),CALayer()];
+        self.ringsArray = [CALayer(),CALayer(),CALayer()];
 //        self.ringsArray = [CALayer()];
 
         self.superLayer.backgroundColor = UIColor.whiteColor().CGColor
@@ -74,7 +74,6 @@ class CIndicatorView: UIView {
         for (index, layer) in self.ringsArray.enumerate() {
             let offset: CGFloat = CGFloat(index) * 30
             layer.frame = CGRectMake(offset/2, offset/2, self.superLayer.bounds.size.width-offset, self.superLayer.bounds.size.height-offset);
-//            layer.frame = CGRectMake(16, 16, 68, 68);
             print(offset,  layer.frame);
 
         }
@@ -88,18 +87,21 @@ class CIndicatorView: UIView {
         CGContextSetLineWidth(context, 0)
         
         var max_ringRadius: CGFloat  = 0.0;
-        let circleRadius: CGFloat = layer.bounds.size.width/2;
-        let divisions = 20/(5-self.layerIndex);
+        let offsetFromBorder: CGFloat = 10.0;
+        let circleRadius: CGFloat = layer.bounds.size.width/2 - offsetFromBorder;
+        let divisions = 20/(self.ringsArray.count-self.layerIndex);
         max_ringRadius = CGFloat(M_PI)*circleRadius/CGFloat(divisions)
-        max_ringRadius = max_ringRadius>5.0 ? 5.0 : max_ringRadius;
+        max_ringRadius = max_ringRadius>circleRadius/5 ? circleRadius/5 : max_ringRadius;
         var angle = 0.0;
         
         for i in 1...divisions {
             angle = (2*M_PI/Double(divisions))*Double(i)
-            let x = circleRadius*CGFloat(sin(angle)) + circleRadius
-            let y = circleRadius*CGFloat(cos(angle)) + circleRadius
-            print("X: ",x , "Y: ",y , "Angle: ",angle, "max_ringRadius: ", fabs(max_ringRadius*CGFloat(sin(angle))));
-            CGContextAddArc(context, x, y, max(fabs(max_ringRadius*CGFloat(sin(angle))), 2.0), 0, CGFloat(2*M_PI), 1);
+            let x = circleRadius*CGFloat(sin(angle)) + circleRadius + offsetFromBorder
+            let y = circleRadius*CGFloat(cos(angle)) + circleRadius + offsetFromBorder
+//            print("X: ",x , "Y: ",y , "Angle: ",angle, "max_ringRadius: ", fabs(max_ringRadius*CGFloat(sin(angle))));
+            print("circleRadius: ",circleRadius, " layerIndex: ",self.layerIndex, "max_ringRadius: ", fabs(max_ringRadius*CGFloat(sin(angle))));
+
+            CGContextAddArc(context, x, y, max(fabs(max_ringRadius*CGFloat(sin(angle))), 0.8), 0, CGFloat(2*M_PI), 1);
             CGContextDrawPath(context, .FillStroke)
         }
         UIGraphicsPopContext()
@@ -129,7 +131,7 @@ class CIndicatorView: UIView {
         var animateScale: CABasicAnimation;
         animateScale = CABasicAnimation(keyPath: "transform.scale");
         // Assign "zRotation" to animation
-        animateScale.toValue = NSValue(CATransform3D: CATransform3DMakeScale(0.5, 0.5, 1));
+        animateScale.toValue = NSValue(CATransform3D: CATransform3DMakeScale(0.3, 0.3, 1));
         // Duration, repeat count, etc
         animateScale.duration = 1.0;//change this depending on your animation needs
         // Here set cumulative, repeatCount, kCAFillMode, and others found in
@@ -142,7 +144,7 @@ class CIndicatorView: UIView {
         // Assign "zRotation" to animation
 //        animateAlpha.toValue = 0.8;
         animateAlpha.fromValue = NSNumber(double: 1.0);
-        animateAlpha.toValue = NSNumber(double: 0.2);
+        animateAlpha.toValue = NSNumber(double: 0.1);
         // Duration, repeat count, etc
         animateAlpha.duration = 1.0;//change this depending on your animation needs
         // Here set cumulative, repeatCount, kCAFillMode, and others found in

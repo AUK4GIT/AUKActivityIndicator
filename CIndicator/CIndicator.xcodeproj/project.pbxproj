@@ -16,7 +16,6 @@
 		AA1DFC001CEB1B490070A778 /* CIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1DFBFF1CEB1B490070A778 /* CIndicatorTests.swift */; };
 		AA1DFC0B1CEB1B490070A778 /* CIndicatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1DFC0A1CEB1B490070A778 /* CIndicatorUITests.swift */; };
 		AA1DFC191CEB80DB0070A778 /* CIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1DFC181CEB80DB0070A778 /* CIndicatorView.swift */; };
-		AA1DFC1B1CEC39B60070A778 /* CRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1DFC1A1CEC39B60070A778 /* CRingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		AA1DFC0A1CEB1B490070A778 /* CIndicatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIndicatorUITests.swift; sourceTree = "<group>"; };
 		AA1DFC0C1CEB1B490070A778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA1DFC181CEB80DB0070A778 /* CIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CIndicatorView.swift; path = CIView/CIndicatorView.swift; sourceTree = "<group>"; };
-		AA1DFC1A1CEC39B60070A778 /* CRingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CRingView.swift; path = CIView/CRingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +109,6 @@
 				AA1DFBF61CEB1B490070A778 /* Info.plist */,
 				AA1DFBEE1CEB1B490070A778 /* CIndicator.xcdatamodeld */,
 				AA1DFC181CEB80DB0070A778 /* CIndicatorView.swift */,
-				AA1DFC1A1CEC39B60070A778 /* CRingView.swift */,
 			);
 			path = CIndicator;
 			sourceTree = "<group>";
@@ -265,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA1DFC1B1CEC39B60070A778 /* CRingView.swift in Sources */,
 				AA1DFBEA1CEB1B490070A778 /* ViewController.swift in Sources */,
 				AA1DFBF01CEB1B490070A778 /* CIndicator.xcdatamodeld in Sources */,
 				AA1DFC191CEB80DB0070A778 /* CIndicatorView.swift in Sources */,
@@ -496,6 +492,7 @@
 				AA1DFC111CEB1B490070A778 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA1DFC121CEB1B490070A778 /* Build configuration list for PBXNativeTarget "CIndicatorTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +501,7 @@
 				AA1DFC141CEB1B490070A778 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA1DFC151CEB1B490070A778 /* Build configuration list for PBXNativeTarget "CIndicatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +510,7 @@
 				AA1DFC171CEB1B490070A778 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
