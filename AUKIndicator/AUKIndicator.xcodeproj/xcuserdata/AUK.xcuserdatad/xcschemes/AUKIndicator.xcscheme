@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AA1DFBE31CEB1B470070A778"
-               BuildableName = "CIndicator.app"
-               BlueprintName = "CIndicator"
-               ReferencedContainer = "container:CIndicator.xcodeproj">
+               BuildableName = "AUKIndicator.app"
+               BlueprintName = "AUKIndicator"
+               ReferencedContainer = "container:AUKIndicator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,34 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AA1DFBFA1CEB1B490070A778"
-               BuildableName = "CIndicatorTests.xctest"
-               BlueprintName = "CIndicatorTests"
-               ReferencedContainer = "container:CIndicator.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AA1DFC051CEB1B490070A778"
-               BuildableName = "CIndicatorUITests.xctest"
-               BlueprintName = "CIndicatorUITests"
-               ReferencedContainer = "container:CIndicator.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA1DFBE31CEB1B470070A778"
-            BuildableName = "CIndicator.app"
-            BlueprintName = "CIndicator"
-            ReferencedContainer = "container:CIndicator.xcodeproj">
+            BuildableName = "AUKIndicator.app"
+            BlueprintName = "AUKIndicator"
+            ReferencedContainer = "container:AUKIndicator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA1DFBE31CEB1B470070A778"
-            BuildableName = "CIndicator.app"
-            BlueprintName = "CIndicator"
-            ReferencedContainer = "container:CIndicator.xcodeproj">
+            BuildableName = "AUKIndicator.app"
+            BlueprintName = "AUKIndicator"
+            ReferencedContainer = "container:AUKIndicator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA1DFBE31CEB1B470070A778"
-            BuildableName = "CIndicator.app"
-            BlueprintName = "CIndicator"
-            ReferencedContainer = "container:CIndicator.xcodeproj">
+            BuildableName = "AUKIndicator.app"
+            BlueprintName = "AUKIndicator"
+            ReferencedContainer = "container:AUKIndicator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

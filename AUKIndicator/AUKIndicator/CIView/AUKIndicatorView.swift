@@ -1,6 +1,6 @@
 //
-//  CIndicatorView.swift
-//  CIndicator
+//  AUKIndicatorView.swift
+//  AUKIndicator
 //
 //  Created by AUK on 17/05/16.
 //  Copyright © 2016 AUK. All rights reserved.
@@ -31,7 +31,7 @@ extension Float  {
     var radiansToDegrees: Float  { return Float(doubleValue * 180 / M_PI) }
 }
 
-class CIndicatorView: UIView {
+class AUKIndicatorView: UIView {
     let superLayer: CALayer = CALayer()
     var ringsArray : [CALayer] = [];
     var layerIndex: Int = 0;

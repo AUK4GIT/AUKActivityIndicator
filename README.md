@@ -1,3 +1,4 @@
 # AUKActivityIndicator
 Activity Indicator
-Custom UIActivityIndicator
+Custom UIActivityIndicator 
+#imitating Reuters

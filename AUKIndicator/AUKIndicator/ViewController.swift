@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  CIndicator
+//  AUKIndicator
 //
 //  Created by AUK on 17/05/16.
 //  Copyright © 2016 AUK. All rights reserved.
